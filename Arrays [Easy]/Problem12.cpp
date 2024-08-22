@@ -113,7 +113,7 @@ int main()
 } */
 
 // Optimal approach.
-#include<bits/stdc++.h>
+/* #include<bits/stdc++.h>
 using namespace std;
 int singlenum(int arr[], int n)
 {
@@ -137,5 +137,38 @@ int main()
     }
     cout<<"The single number in this Array is: "<<singlenum(arr,n);
     return 0;
-}
+} */
 
+#include<bits/stdc++.h>
+using namespace std;
+int singlenum(int arr[], int n)
+{
+	int i=0;
+    while(i<n)
+    {
+        if(arr[i]!=arr[i+1])
+        {
+            return arr[i];
+        }
+        if(arr[i]==arr[i+1])
+        {
+            i=i+1;
+        }
+        i++;
+    }
+    return -1;
+}
+int main()
+{
+    int n;
+    cout<<"Enter the size of Array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements of Array (all numbers twice, except one): ";
+    for(int i=0; i<n; i++)
+    {
+        cin>>arr[i];
+    }
+    cout<<"The single number in this Array is: "<<singlenum(arr,n);
+    return 0;
+}
