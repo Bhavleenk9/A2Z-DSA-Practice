@@ -87,6 +87,10 @@ long long maxSubarraySum(int arr[], int n)
             sum = 0;
         }
     }
+    if(maxi < 0)
+    {
+        return 0;
+    }
     return maxi;
 }
 int main()
