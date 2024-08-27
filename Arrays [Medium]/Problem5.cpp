@@ -1,4 +1,5 @@
 // This is the code for Print subarray with maximum subarray sum (extended version of previous problem).
+// Kadane's Algorithm. 
 
 #include <bits/stdc++.h>
 using namespace std;
