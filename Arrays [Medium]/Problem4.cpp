@@ -135,7 +135,7 @@ long long maxSubarraySum(int arr[], int n)
             sum = 0;
         }
     }
-    out << "The subarray is: [";
+    cout << "The subarray is: [";
     for (int i = ansStart; i <= ansEnd; i++) 
     {
         cout << arr[i] << " ";
